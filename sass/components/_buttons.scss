@@ -1,0 +1,67 @@
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+}
+
+.btn__link {
+    padding: 6px 22px;
+    color: #212121;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border-radius: 4px;
+
+    transition-property: color, background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: var(--light-bg-cl);
+    background-color: var(--accent-txt-cl);
+
+
+}
+  
+}
+
+.btn__link--current {
+    color: var(--light-bg-cl);
+    background-color: var(--accent-txt-cl);
+}
+
+
+.modal__btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    fill: #2196f3;
+}
+
+}

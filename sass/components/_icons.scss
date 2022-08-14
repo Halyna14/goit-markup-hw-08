@@ -1,0 +1,65 @@
+.icons__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        background: #ffffff;
+
+&:hover,
+&:focus {
+    background-color: #2196f3;
+}
+}
+
+.icons__link:hover .socials__icon,
+.icons__link:focus .socials__icon {
+    fill: #ffffff;
+}
+
+
+.networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #43444d;
+
+    fill: #ffffff;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: #2196f3;
+}
+}
+
+.networks:hover .socials__icon,
+.networks:focus .socials__icon {
+    fill: #ffffff;
+}
+
+.socials__icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

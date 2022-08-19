@@ -1,49 +1,62 @@
 .team__section {
-    background-color: #f5f4fa;
+  background-color: #f5f4fa;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .team__item {
-    /* flex-basis: calc((100% - 30px * 3) / 4); */
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
+  /* flex-basis: calc((100% - 30px * 3) / 4); */
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
 }
 
 .team__text {
-    margin-bottom: 16px;
-    line-height: calc(19 / 16);
-    letter-spacing: 0.03em;
-    color: var(--phone-cl);
+  margin-bottom: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  color: var(--phone-cl);
 }
 
 .team__list {
-    display: flex;
-    gap: var(--indent);
+  gap: var(--indent);
+  background-color: var(--bg-medium-cl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-    background-color: var(--bg-medium-cl);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
+
+
 .team__wrapper {
-    border-top: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  border-top: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .work__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }

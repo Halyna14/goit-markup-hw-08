@@ -3,16 +3,23 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--phone-cl);
+    margin: 0;
 }
 
 .title {
+    margin: 0;
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 10px;
+    text-align: center;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .hero__title {
@@ -21,9 +28,6 @@
     margin-left: auto;
     width: 696px;
     text-align: center;
-
-    // @include fonts(44px, 60px, 900, 0.06em);
-
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -31,6 +35,15 @@
 
     text-transform: uppercase;
     color: var(--light-bg-cl);
+
+    @media screen and (max-width: 1199px) {
+        width: 360px;
+height: 84px;
+left: 60px;
+top: 178px;
+font-size: 26px;
+line-height: calc(42 / 26);
+    }
 }
 
 .section__title {
@@ -54,6 +67,7 @@
 }
 
 .footer__title {
+    display: inline-block;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;

@@ -1,5 +1,9 @@
 .clients {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -10,7 +14,7 @@
 }
 
 .clients__link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -41,4 +45,3 @@ fill: #afb1b8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-

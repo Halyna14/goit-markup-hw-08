@@ -129,14 +129,31 @@ width: 100%;
 
 
 .form__container--footer {
-    margin-left: 90px;
+    
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 90px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .form__footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    }
+    
 }
 
 .form__input--footer {
@@ -163,6 +180,18 @@ width: 100%;
 &:hover,
 &:focus {
     border-color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 450px;
+    height: 50px;
 }
 }
 
@@ -196,6 +225,10 @@ width: 100%;
 &:focus {
     background-color: #188ce8;
     border: none;
+}
+
+@media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
 }
 }
 

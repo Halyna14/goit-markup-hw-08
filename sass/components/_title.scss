@@ -75,6 +75,10 @@ line-height: calc(42 / 26);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .form__title {

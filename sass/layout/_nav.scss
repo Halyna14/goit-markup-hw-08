@@ -1,43 +1,42 @@
 .nav {
-    display: flex;
-    margin-right: auto;
-    gap: 50px;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
+  align-items: center;
+  flex-direction: row;
 }
 
 .nav__list {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
 
-    transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-            color: var(--accent-txt-cl);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
 
-
-&--current::after {
+  &--current::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -49,41 +48,35 @@
     background-color: var(--accent-txt-cl);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
 
-
-&--current {
+  &--current {
     position: relative;
     color: var(--accent-txt-cl);
-}
-
+  }
 }
 
 .icon__nav {
-    fill: currentColor;
+  fill: currentColor;
 }
 
-
-.nav__list--contacts{
-
-    @media screen and(min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        gap: 30px;
-    }
+.nav__list--contacts {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+  }
 }
 
-.nav__item--contacts{
-    @media screen and (min-width: 768px) {
-        padding: 0;
-        margin: 0;
-    }
-    }
-   
-  
+.nav__item--contacts {
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+  }
+}

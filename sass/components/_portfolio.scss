@@ -2,6 +2,8 @@
     position: relative;
         overflow: hidden;
     display: inline-block;
+    width: 100%;
+    height: 100%;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -11,6 +13,11 @@
     background: #ffffff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
 }
 }
 
@@ -27,6 +34,10 @@
 .portfolio__thumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 1;
+    }
 }
 
 .overlay__portfolio {
@@ -64,10 +75,22 @@
 .filter__list {
     display: flex;
     gap: 8px;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     margin-bottom: 34px;
     font-family: inherit;
     cursor: pointer;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
 }

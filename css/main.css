@@ -256,7 +256,7 @@ img {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .navi-tel-link {
@@ -264,7 +264,7 @@ img {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
   margin-left: 0;
   margin-bottom: 32px;
 }
@@ -330,11 +330,11 @@ img {
 
 .navi-link:hover,
 .navi-link:focus {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .navi-current {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .card__set {

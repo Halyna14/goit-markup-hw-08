@@ -25,7 +25,6 @@
 }
 
 .hero__section {
-  
   text-align: center;
 
   background-color: var(--hero-cl);
@@ -37,7 +36,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
-  padding-bottom: 200px;
+    padding-bottom: 200px;
   }
 }
 

@@ -1,50 +1,49 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-    @media screen and (max-width: 1199px) {
-        padding-top: 60px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
     padding-bottom: 60px;
-    }
+  }
 }
 .section-list {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; 
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .section-list__item {
-    gap: 30px;
-    @media screen and (min-width: 480px) {
-       width: 450px; 
-    }
-    @media screen and (min-width: 768px) {
-        width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 270px;
-    }
-  
+  gap: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .section__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }

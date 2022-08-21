@@ -1,12 +1,15 @@
 .nav {
   display: flex;
+  align-items: center;
   margin-right: auto;
   gap: 50px;
-  align-items: center;
-  flex-direction: row;
-
+ 
   @media screen and (max-width: 767px) {
     margin-left: 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 

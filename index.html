@@ -56,9 +56,7 @@
               ></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
-            
-          </div>
+          <div class="menu-container" id="menu-container" data-menu></div>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link nav__link--current link" href="./index.html"
@@ -170,19 +168,29 @@
           <ul class="section-list list">
             <li class="doing__link link">
               <div class="doing__thumb">
-                <img src="./img/img.jpg" alt="верстка" width="370" />
+                <img 
+                srcset="./img/doing/img-1-270.jpg 270w
+                "
+                sizes="min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="img/doing/img-1-270.jpg" alt="верстка" width="370" height="294"/>
                 <p class="doing__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="doing__link link">
               <div class="doing__thumb">
-                <img src="./img/img2.jpg" alt="маркетинг" width="370" />
+                <img
+                srcset="./img/doing/img-2-270.jpg 270w"
+                sizes="min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/doing/img-2-270.jpgg" alt="маркетинг" width="370" height="294" />
                 <p class="doing__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="doing__link link">
               <div class="doing__thumb">
-                <img src="./img/img3.jpg" alt="веб-дизайн" width="370" />
+                <img 
+                srcset="./img/doing/img-3-270.jpg 270w"
+                sizes="min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/doing/img-3-270.jpg" alt="веб-дизайн" width="370" height="294" />
                 <p class="doing__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -195,7 +203,20 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list card__set list">
             <li class="set__item">
-              <img src="./img/img4.jpg" alt="дизайнер продуктов" width="270" />
+              <img
+                srcset="
+                  ./img/team/img-1-270.jpg 270w,
+                  ./img/team/img-1-354.jpg 354w,
+                  ./img/team/img-1-450.jpg 450w,
+                  ./img/team/img-1-708.jpg 708w,
+                  ./img/team/img-1-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/team/img-1-270.jpg"
+                alt="дизайнер продуктов"
+                width="450"
+                height="260"
+              />
               <div class="team__wrapper">
                 <h3 class="team__item">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -256,7 +277,20 @@
               </div>
             </li>
             <li class="set__item">
-              <img src="./img/img5.jpg" alt="разработчик" width="270" />
+              <img
+                srcset="
+                  ./img/team/img-2-270.jpg 270w,
+                  ./img/team/img-2-354.jpg 354w,
+                  ./img/team/img-2-450.jpg 450w,
+                  ./img/team/img-2-708.jpg 708w,
+                  ./img/team/img-2-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/team/img-2-270.jpg"
+                alt="разработчик"
+                width="450"
+                height="260"
+              />
               <div class="team__wrapper">
                 <h3 class="team__item">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -317,7 +351,20 @@
               </div>
             </li>
             <li class="set__item">
-              <img src="./img/img6.jpg" alt="маркетинг" width="270" />
+              <img
+                srcset="
+                  ./img/team/img-3-270.jpg 270w,
+                  ./img/team/img-3-354.jpg 354w,
+                  ./img/team/img-3-450.jpg 450w,
+                  ./img/team/img-3-708.jpg 708w,
+                  ./img/team/img-3-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/team/img-3-270.jpg"
+                alt="маркетинг"
+                width="450"
+                height="260"
+              />
               <div class="team__wrapper">
                 <h3 class="team__item">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -378,7 +425,20 @@
               </div>
             </li>
             <li class="set__item">
-              <img src="./img/img7.jpg" alt="веб-дизайн" width="270" />
+              <img
+                srcset="
+                  ./img/team/img-4-270.jpg 270w,
+                  ./img/team/img-4-354.jpg 354w,
+                  ./img/team/img-4-450.jpg 450w,
+                  ./img/team/img-4-708.jpg 708w,
+                  ./img/team/img-4-900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                src="./img/team/img-4-270.jpg"
+                alt="веб-дизайн"
+                width="450"
+                height="260"
+              />
               <div class="team__wrapper">
                 <h3 class="team__item">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>

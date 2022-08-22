@@ -1,12 +1,8 @@
 .team__section {
   background-color: #f5f4fa;
-
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .team__item {
-  /* flex-basis: calc((100% - 30px * 3) / 4); */
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -51,13 +47,11 @@
 }
 
 .work__wrapper {
-  width: 354px;
-  height: 146px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  // border: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;

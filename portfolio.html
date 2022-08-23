@@ -33,27 +33,31 @@
           <button
             type="button"
             class="menu-button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+            aria-controls="menu-container" 
+            data-menu-open
           >
             <svg
               width="40"
               height="40"
               aria-label="Переключатель мобильного меню"
             >
-              <use
+              <!-- <use
                 class="icon-close"
                 href="./img/icons/symbol-defs.svg#close_40px"
-              ></use>
+              ></use> -->
               <use
                 class="icon-menu"
                 href="./img/icons/symbol-defs.svg#menu_40px"
               ></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-container is-open" data-menu>
             <div class="mobile-menu">
+              <button class="menu-button menu-button-close" type="button" data-menu-close>
+                <svg width="40" height="40">
+                  <use href="./img/icons/symbol-defs.svg#close_40px"></use>
+                </svg>
+              </button>
               <ul class="navi-list list">
                 <li class="navi-item">
                   <a class="navi-link link" href="./index.html">Студия</a>
